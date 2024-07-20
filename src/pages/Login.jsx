@@ -14,12 +14,11 @@ import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
-
+import { VisuallyHiddenInput } from "../components/styles/StyledComponent";
 import { bgGradient } from "../constants/color";
 import { server } from "../constants/config";
 import { userExists } from "../redux/reducers/auth";
 import { usernameValidator } from "../utils/validators";
-import { VisuallyHiddenInput } from "../components/styles/StyledComponent";
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
